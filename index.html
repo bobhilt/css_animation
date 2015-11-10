@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="stylesheets/style.css" type="text/css" media="screen">
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('#car-body').click(function(){
+          $('body').toggleClass('pause');
+          $('#wheel-front').toggleClass('pause');
+          $('#wheel-back').toggleClass('pause');
+        })
+      });
+    </script>
+  </head>
+  <body>
+    <div id="container">
+      <div id="car-body"></div>
+      <div id="wheel-front"></div>
+      <div id="wheel-back"></div>
+    </div>
+  </body>
+</html>
